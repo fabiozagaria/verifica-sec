@@ -24,7 +24,6 @@ public class User {
     private String name;
 
     @NotNull
-    @Column(nullable = false)
     @OneToMany(mappedBy = "owner")
     private List<Task> taskList;
 
